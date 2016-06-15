@@ -1,6 +1,6 @@
 controller_list:
   - name: "left"
-    action_ns: follow_joint_trajectory
+    action_ns: joint_trajectory_action
     type: FollowJointTrajectory
     joints:
       - left_shoulder_pan_joint
@@ -10,7 +10,7 @@ controller_list:
       - left_wrist_2_joint
       - left_wrist_3_joint
   - name: "right"
-    action_ns: follow_joint_trajectory
+    action_ns: joint_trajectory_action
     type: FollowJointTrajectory
     joints:
       - right_shoulder_pan_joint
