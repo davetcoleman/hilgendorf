@@ -15,6 +15,18 @@
     <group name="left_arm">
         <chain base_link="base_link" tip_link="left_gripper_target" />
     </group>
+    <group name="two_dof">
+        <chain base_link="base_link" tip_link="right_upper_arm_link" />
+    </group>
+    <group name="three_dof">
+        <chain base_link="base_link" tip_link="right_forearm_link" />
+    </group>
+    <group name="four_dof">
+        <chain base_link="base_link" tip_link="right_wrist_1_link" />
+    </group>
+    <group name="five_dof">
+        <chain base_link="base_link" tip_link="right_wrist_2_link" />
+    </group>
     <group name="right_eef">
         <joint name="right_robotiq_85_base_joint" />
         <joint name="right_robotiq_85_left_inner_knuckle_joint" />
