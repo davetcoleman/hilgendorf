@@ -13,7 +13,7 @@
 
   <!-- Physical dimensions -->
   <xacro:property name="ur5_mount_angle_offset" value="-0.7853981633974483" />
-  <xacro:property name="robotiq_grip_target_offset" value="0.1" />
+  <xacro:property name="robotiq_grip_target_offset" value="0.125" />
 
   <xacro:macro name="hilgendorf" params="prefix">
 
@@ -57,14 +57,14 @@
     <joint name="${prefix}to_right_gripper_target" type="fixed">
       <parent link="${prefix}right_robotiq_85_base_link" />
       <child link="${prefix}right_gripper_target" />
-      <origin xyz="${robotiq_grip_target_offset} 0 0" />
+      <origin xyz="${robotiq_grip_target_offset} 0 0" rpy="0 1.57 0" />
     </joint>
 
     <link name="${prefix}left_gripper_target" />
     <joint name="${prefix}to_left_gripper_target" type="fixed">
       <parent link="${prefix}left_robotiq_85_base_link" />
       <child link="${prefix}left_gripper_target" />
-      <origin xyz="${robotiq_grip_target_offset} 0 0" />
+      <origin xyz="${robotiq_grip_target_offset} 0 0" rpy="0 1.57 0" />
     </joint>
 
   </xacro:macro>
