@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/hilgendorf.srdf
   CONFIG:
-    generated_timestamp: 1455051018
+    generated_timestamp: 1469336577
